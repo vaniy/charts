@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://www.gainer88.com/jiaoyi2.php?mt4=66001340&rangetime=1 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title></title>
+<link type="text/css" href="/stylesheets/css(1).css" rel="stylesheet">
+<link type="text/css" href="/stylesheets/media.css" rel="stylesheet">
+ <link href="/stylesheets/layer.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.touchSlider.js"></script>
+<script src="/js/layer.js"></script><link rel="stylesheet" href="/stylesheets/layer(1).css" id="layuicss-skinlayercss">
+<script src="/js/jquery.form.js"></script>
+<script src="/js/jquery.validate.min.js"></script>
+<script src="/js/messages_cn.js"></script>
+<script type="text/javascript" src="/js/echarts.common.min.js"></script>
+<script>
+$(document).ready(function(){
+	$(".chart-tab li").click(function(){
+		$(this).parent().find("li").removeClass("on");
+		$(this).addClass("on");
+		var index=$(this).index();
+		$(this).parent().parent().parent().find(".follow>div").hide();
+		$(this).parent().parent().parent().find(".follow>div:eq("+index+")").show();
+	});
+
+});
+</script>
+</head>
+
+<body style="background:#f0f2f5;"><script type="text/javascript">$(function(){KISSY.use('wltaoMFD', function(a,b){var mfd = new b;mfd.init();});});</script>
+ <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+
+  
+    
+<script>
+    $(".cd-nav-trigger").click(function(){
+        $(".cd-main-content nav").toggleClass('nav-is-visible');
+
+    })
+</script>   
+   
+	<div class="hq w1200">
+      <div class="mx">
+    	<div class="mx_tx" style="padding:18px 0;">
+		
+								<!-- <img class="avatar_pic" src="./盖诺外汇跟单社区_files/1509003181.jpg" style="width:56px;height:56px"> -->
+				</div>
+        <div class="mx_name">
+        	Seafly		  <p>跟随人数：6108</p>
+            
+        
+         </div>
+         <div class="mx_sy">当前余额<p>$ 11308.69</p></div>
+        <div class="mx_sy">当前净值 <p style="color:#666;">$ 11308.69</p></div>
+         <div class="mx_sy">浮动盈亏  <p style="color:#666;">$ 0</p></div>
+         <div class="mx_an">
+         	<ul>
+						      <li style="border:1px solid #f00;background:#f00;"><a href="#" style="color:#fff" onclick="guanZhu(&#39;18590&#39;,false)">取消关注</a></li>
+										<li style="border:1px solid #f00;float:left;"><a href="#" style="color:#fff" id="gendan_btn">跟随</a></li>
+				
+            
+				
+            </ul>
+         </div>
+    </div>
+    
+    <div class="userdetail_numtable">
+    <table width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                
+                <td>
+                    <div class="left_numbox"><span class="numtxtname" title="平均每笔订单的获利点数">平均获利点数：</span>1.5<span>点</span></div>
+                </td>
+				  <td>
+                   <div class="right_numbox"><span class="numtxtname" title="所有交易的总手数">交易手数：</span>223.5<span>手</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="left_numbox"><span class="numtxtname" title="注册至今的总交易笔数">交易笔数：</span>709<span>笔</span></div>
+                </td>
+                <td>
+                    <div class="right_numbox"><span class="numtxtname" title="盈利的交易笔数">胜出交易笔数：</span><span>371笔</span></div>
+                </td>
+            </tr>
+           <!-- <tr>
+                <td>
+                    <div class="left_numbox"><span class="numtxtname" title="自主交易开仓笔数">自主开仓笔数：</span>27<span>笔</span></div>
+                </td>
+                <td>
+                    <div class="right_numbox"><span class="numtxtname" title="跟随交易的开仓笔数">跟随开仓笔数：</span>1000<span>笔</span></div>
+                </td>
+            </tr>-->
+      
+        </tbody>
+    </table>
+</div>
+    
+    <div class="jymx">
+    	<div class="jymx_lf">
+        	<div class="dt">
+            	<div class="dt_tit">
+                    <div class="dt1_lf">动态</div>
+                <!--  <div class="dt1_lr">更多&gt;&gt;</div>  -->
+                </div>
+                <div class="m_wz" id="wz">
+                  <!-- <iframe src="./盖诺外汇跟单社区_files/rili.html" style="border: 0px; width: 253px; height: 380px;"></iframe> -->
+				</div>
+            </div>
+            <div class="dt" style="margin:20px 0;">
+            	<h3 style="color:#f00;padding-bottom:5px;">重要免责声明</h3>
+                <p>这里公布的所有数据，都是通过在不同的交易商处执行的交易结果。用户无法公布或上传交易历史到 以证明其交易业绩，原因是这些交易记录是可以被修正或更改的。所有的交易表现统计都是最终结果,包含最后的点差。</p>
+            </div>
+        </div>
+<style>
+	.chart-tab a{color:#666;margin: 10px; padding: 0px 4px;}
+	.chart-tab a.active{ border-bottom: 1px solid;};
+</style>
+        <div class="jymx_lr">
+        	<h2 style="color:#666;font-weight:normal;border-left:2px solid #f00;padding-left:10px;margin-top:10px;margin-bottom:20px;">统计报表
+        	 <div class="ord_tit" style="float:right;    font-size: 16px;">
+                   图表数据截止于每日24:00点，次日清晨更新（单位：美元）
+                </div>
+			</h2>
+			<div class="chart-tab">
+				<a href="javascript:;" class="active">获利曲线</a>
+				<a href="javascript:;" class="">资金曲线</a>
+			</div>
+        	<div class="follow chart-tab-content">
+				<div id="yue-chart" style="display: block; width: 900px; height: 320px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;" _echarts_instance_="ec_1535448954977"><div style="position: relative; overflow: hidden; width: 900px; height: 320px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas width="1800" height="640" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 900px; height: 320px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px sans-serif; padding: 5px; left: 400px; top: 85px;">2017/10/26 08:22<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#c23531;"></span>截止当前总资金: 811.48</div></div>
+                <div id="jingzhi-chart" style="width: 900px; height: 320px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent; display: none;" _echarts_instance_="ec_1535448954978"><div style="position: relative; overflow: hidden; width: 900px; height: 320px; padding: 0px; margin: 0px; border-width: 0px;"><canvas width="1800" height="640" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 900px; height: 320px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div> 
+             </div>
+             <div class="shuju">
+             	<ul>
+                	<li>$ 7519.57<p>月总收益</p></li>
+                    <li>52.33<p>总胜率（%）</p></li>
+                    <li>2.25<p>日均单量</p></li>
+                    <!--<li>1005.5<p>资金留存</p></li>
+                    <li>1005.5<p>交易杠杆</p></li>
+                   <li>315<p>交易天数</p></li>-->
+				   <li>$11308.69<p>资金留存</p></li>
+                  <!--  <li>1005.5<p>短线占比（%）</p></li>
+                    <li>1005.5<p>中长线占比（%）</p></li>
+                    <li>1005.5<p>跟随人数</p></li>
+                    <li>1005.5<p>收藏人数</p></li>-->
+                </ul>
+             </div>
+                
+            
+        </div>
+		
+
+		<div class="jymx_lr" style="margin-top:20px">
+				<h2 style="color:#666;font-weight:normal;border-left:2px solid #f00;padding-left:10px;margin-top:10px;margin-bottom:20px;">每日收益（一个月）
+				<div class="ord_tit" style="float:right;    font-size: 16px;">
+                   图表数据截止于每日24:00点，次日清晨更新（单位：美元）
+                </div> 
+				</h2>
+				<div class="follow">
+					<div id="shouyi-chart" style="width: 900px; height: 320px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;" _echarts_instance_="ec_1535448954979"><div style="position: relative; overflow: hidden; width: 900px; height: 320px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas width="1800" height="640" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 900px; height: 320px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div></div></div>   
+             </div>
+		</div>
+		
+		<div class="jymx_lr" style="margin-top:20px">
+			<div style="width:100%;float:left">
+				<h2 style="color:#666;font-weight:normal;border-left:2px solid #f00;padding-left:10px;margin-top:10px;margin-bottom:20px;">日交易笔数</h2>
+				<div class="follow">
+					<div id="bishu-chart" style="width: 100%; height: 320px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;" _echarts_instance_="ec_1535448954980"><div style="position: relative; overflow: hidden; width: 880px; height: 320px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas width="1760" height="640" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 880px; height: 320px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px sans-serif; padding: 5px; left: 213px; top: 80px;">2018-08-07<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#c23531;"></span>买: 0<br><span style="display:inline-block;margin-right:5px;border-radius:10px;width:9px;height:9px;background-color:#2f4554;"></span>卖: 1</div></div>   
+				</div>
+			</div>
+			
+		 
+		</div>
+
+		<div class="jymx_lr" style="margin-top:20px">
+		 
+			
+			<div style="width:100%;float:left">
+				<h2 style="color:#666;font-weight:normal;border-left:2px solid #f00;padding-left:10px;margin-top:10px;margin-bottom:20px;">商品交易比例</h2>
+				<div class="follow">
+					<div id="shangpin-chart" style="width: 100%; height: 320px; -webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;" _echarts_instance_="ec_1535448954981"><div style="position: relative; overflow: hidden; width: 880px; height: 320px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"><canvas width="1760" height="640" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 880px; height: 320px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas></div><div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s; background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font: 14px/21px sans-serif; padding: 5px; left: 493px; top: 69px;">访问来源 <br>GBPJPY.: 502 (71.41%)</div></div>   
+				</div>
+			</div>
+		</div>
+		
+        <!--
+        <div class="jymx_lr" style="margin-top:20px">
+        	<h2 style="color:#666;font-weight:normal;border-left:2px solid #f00;padding-left:10px;margin-top:10px;margin-bottom:20px;">月收益分析</h2>
+        	<div class="ord_tit">
+                    <ul class="chart-tab">
+                        <li class="on" style="width:24%">2017</li>
+                        <li class="" style="width:24%">2016</li>
+                        <li class="" style="width:24%">2015</li>
+                        <li class="" style="width:24%">2014</li>
+                    </ul>
+                </div>
+        	<div class="follow" >
+				<div id="shouyi-chart1" style="width: 900px;height:320px;"></div>   
+                <div id="shouyi-chart2" style="display:none; width: 900px;height:320px;"></div>
+				<div id="shouyi-chart3" style="display:none; width: 900px;height:320px;"></div>
+				<div id="shouyi-chart4" style="display:none; width: 900px;height:320px;"></div>
+             </div>
+             
+                
+            
+        </div>
+          --> 
+        <div class="jymx_lr" style="margin-top:20px">
+        	<h2 style="color:#666;font-weight:normal;border-left:2px solid #f00;padding-left:10px;margin-top:10px;margin-bottom:20px;">历史记录</h2>
+        	
+        	<div class="follow" id="follow" style="display: block;height:auto">
+            	<div class="table_screen_box screening_click hide">
+                            
+                            <div class="screen_group radio_group">
+                                <label for="">时间</label>
+                                <div class="radio_box">
+                                    <a href="http://www.gainer88.com/jiaoyi2.php?mt4=66001340" style="margin-left:-1px;">最近一周</a>
+                                    <a href="http://www.gainer88.com/jiaoyi2.php?mt4=66001340&amp;rangetime=1" class="on">最近一月</a>
+                                    <a href="http://www.gainer88.com/jiaoyi2.php?mt4=66001340&amp;rangetime=2">最近三月</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                        <div class="datatable_box mt20 hide">
+                            
+                            <div>
+                                <table width="100%" class="tr_Diff order1" cellpadding="0" cellspacing="0">
+                                    
+                                    <thead>
+                                        <tr style="background:#f5f5f5;">
+                                            <th feild="NickName">盈利金额</th>
+                                            <th feild="SYMBOL">周期单量</th>
+                                            <th feild="CMD">周期手数</th>
+                                            <th feild="VOLUME">周期胜率</th>
+                                       
+                                            
+                                            
+                                        </tr>
+                                    </thead>
+     
+                                    <tbody id="order_open">                    
+                                    	<tr>            
+                                        	<td feild="NickName">$681.93</td>
+                                            <td feild="SYMBOL">0</td>
+                                            <td feild="CMD">0.18</td>
+                                            <td feild="VOLUME">70%</td>
+                                        </tr>                
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="ord_tit" style="margin-top:30px;margin-bottom:10px; border-bottom: 1px solid #eee; display:none">
+                    <ul>
+                        <li class="on" id="dd" style="border-bottom:none;"><a href="http://www.gainer88.com/jiaoyi2.php?mt4=66001340&amp;rangetime=1#">历史记录(最近10条)</a></li>
+                        <li id="gs" class="" style="border-bottom:none;"><a href="http://www.gainer88.com/jiaoyi2.php?mt4=66001340&amp;rangetime=1#">当前持仓单</a></li>
+                        
+                    </ul>
+                </div>
+                        
+                        <div class="datatable_box1 mt20">
+                            
+                            <div>
+                                <table width="100%" class="tr_Diff order1" id="table-history" cellpadding="0" cellspacing="0">
+                                    
+                                    <thead>
+                                        <tr style="background:#f5f5f5;">
+                                            <th>单号</th>
+                                            <th>品种</th>
+                                            <th>开仓时间 (MT4时间)</th>
+                                            <th>平仓时间 (MT4时间)</th>
+                                       		<th>手数</th>
+                                            <th>类别</th>
+                                            <th>入场/出场</th>
+                                            <th>止盈/止损</th>
+                                            <th>盈利金额</th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody id="order_open">
+		
+			
+                                    	<tr data-closetime="1535414002">            
+                                        	<td>13832823</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-28 07:36</td>
+                                            <td>2018-08-28 07:53</td>
+                                            <td>0.4</td>
+                                            <td>
+											SELL											</td>
+                                            <td>143.45<p>143.294</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>56.13</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1535411611">            
+                                        	<td>13830040</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-28 06:45</td>
+                                            <td>2018-08-28 07:13</td>
+                                            <td>0.4</td>
+                                            <td>
+											BUY											</td>
+                                            <td>143.135<p>143.289</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>55.44</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1535077441">            
+                                        	<td>13811391</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-24 10:10</td>
+                                            <td>2018-08-24 10:24</td>
+                                            <td>0.4</td>
+                                            <td>
+											SELL											</td>
+                                            <td>142.989<p>143.174</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>-66.41</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534896481">            
+                                        	<td>13782503</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-22 07:59</td>
+                                            <td>2018-08-22 08:08</td>
+                                            <td>0.4</td>
+                                            <td>
+											BUY											</td>
+                                            <td>142.271<p>142.12</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>-54.7</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534831201">            
+                                        	<td>13772938</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-21 13:51</td>
+                                            <td>2018-08-21 14:00</td>
+                                            <td>0.4</td>
+                                            <td>
+											BUY											</td>
+                                            <td>141.904<p>142.088</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>66.64</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534809486">            
+                                        	<td>13768257</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-21 07:28</td>
+                                            <td>2018-08-21 07:58</td>
+                                            <td>0.4</td>
+                                            <td>
+											SELL											</td>
+                                            <td>141.266<p>141.366</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>-36.3</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534734481">            
+                                        	<td>13756318</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-20 10:57</td>
+                                            <td>2018-08-20 11:08</td>
+                                            <td>0.4</td>
+                                            <td>
+											BUY											</td>
+                                            <td>140.942<p>141.162</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>79.56</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534721893">            
+                                        	<td>13751502</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-20 06:00</td>
+                                            <td>2018-08-20 07:38</td>
+                                            <td>0.4</td>
+                                            <td>
+											SELL											</td>
+                                            <td>140.928<p>141.036</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>-39.04</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534470960">            
+                                        	<td>13743163</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-17 09:22</td>
+                                            <td>2018-08-17 09:56</td>
+                                            <td>0.4</td>
+                                            <td>
+											SELL											</td>
+                                            <td>140.695<p>140.496</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>71.99</td>
+                                        </tr>       
+     		
+                                    	<tr data-closetime="1534288740">            
+                                        	<td>13712878</td>
+                                            <td>GBPJPY.ecn</td>
+                                            <td>2018-08-15 06:50</td>
+                                            <td>2018-08-15 07:19</td>
+                                            <td>0.4</td>
+                                            <td>
+											BUY											</td>
+                                            <td>141.432<p>141.67</p></td>
+                                            <td>0<p>0</p></td>
+                                            <td>85.52</td>
+                                        </tr>       
+                                         </tbody>
+                                </table>
+<!-- <div class="loadmore" style="text-align: center;
+    background: #f5f5f5;
+    padding: 10px 0px;cursor:pointer">加载更多</div> -->
+                            </div>
+                        </div>
+             </div>
+             
+             
+            
+        </div>
+        
+        
+    </div>
+    <%-dom %>
+<script>
+
+	
+	
+	// function genDan(mt4,op){
+	// 	if(op==true){
+			
+	// 		layer.open({
+	// 				type:2,
+	// 				title:'',
+	// 				fix: false,
+	// 				shadeClose: true,
+	// 				maxmin: true,
+	// 				area: ['962px','582px'],
+	// 				content:'/gendan_step2_1.php?mmt4='+mt4, 
+	// 		});
+		
+	// 	}else{
+	// 			$.get("action.php?type=gendan2",{mt4:mt4,op:op},function(data,status){
+	// 				if(typeof data == "object"){
+					
+	// 					data.length>0 && doPost(data)
+					
+						
+						
+	// 				}else{
+	// 					alert("提交失败");
+	// 				}
+				
+	// 			},"json");
+	// 	}
+	
+	// }
+	
+		
+	// function guanZhu(uid,op){
+	// 	$.get("action.php?type=guanzhu",{uid:uid,op:op},function(data,status){
+	// 				if(data=="success"){
+	// 					alert("提交成功");
+	// 					window.location.reload();
+	// 				}else{
+	// 					alert("提交失败");
+	// 				}
+				
+	// 	});
+	
+	// }
+	
+	// $(".loadmore").click(function(){
+	// 	    var closetime=$("#table-history tbody tr:last").attr("data-closetime");
+	// 		$.get("action.php?type=loadmore",{closetime:closetime,mt4:66001340},function(data,status){
+	// 			if(typeof data=="object"){
+	// 				$.each(data,function(key,danzi){  
+					
+	// 				var pt=	new Date(parseInt(danzi.OpenTime)*1000);
+	// 				var ct=	new Date(parseInt(danzi.CloseTime)*1000);
+					
+	// 				       var str='<tr data-closetime="'+danzi.CloseTime+'">'            
+    //                         +'<td>'+danzi.Ticket+'</td>'
+    //                         +'                <td>'+danzi.Symbol+'</td>'
+    //                         +'              <td>'+pt.format("yyyy-MM-dd  HH:mm")+'</td>'
+    //                         +'               <td>'+ct.format("yyyy-MM-dd  HH:mm")+'</td>'
+    //                         +'              <td>'+danzi.Lots+'</td>'
+    //                           +'             <td>'
+	// 						 + (danzi.Operation==0?"BUY":"SELL")
+	// 						 +' 			</td>'
+    //                          +'               <td>'+danzi.OpenPrice+'<p>'+danzi.ClosePrice+'</p></td>'
+    //                          +'               <td>'+danzi.TakeProfit+'<p>'+danzi.StopLoss+'</p></td>'
+    //                          +'               <td>'+danzi.Profit+'</td>'
+    //                          +'            </tr>  ';
+	// 						$("#table-history tbody").append(str);
+	// 				});
+				
+	// 			}
+	// 		},'json');
+	// });
+
+Date.prototype.format = function (fmt) {
+    var o = {
+        "M+": this.getMonth() + 1, //月           
+        "d+": this.getDate(), //日           
+        "h+": this.getHours() % 12 == 0 ? 12 : this.getHours() % 12, //时           
+        "H+": this.getHours(), //小时           
+        "m+": this.getMinutes(), //分           
+        "s+": this.getSeconds(), //秒           
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季          
+        "S": this.getMilliseconds() //毫秒           
+    };
+    var week = {
+        "0": "\u65e5",
+        "1": "\u4e00",
+        "2": "\u4e8c",
+        "3": "\u4e09",
+        "4": "\u56db",
+        "5": "\u4e94",
+        "6": "\u516d"
+    };
+    if (/(y+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    }
+    if (/(E+)/.test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, ((RegExp.$1.length > 1) ? (RegExp.$1.length > 2 ? "\u661f\u671f" : "\u5468") : "") + week[this.getDay() + ""]);
+    }
+    for (var k in o) {
+        if (new RegExp("(" + k + ")").test(fmt)) {
+            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        }
+    }
+    return fmt;
+}
+
+$(".chart-tab a").click(function(){
+	$(".chart-tab a").removeClass("active");
+	$(".chart-tab-content>div").hide();
+	$(this).addClass("active");
+	var index = $(this).index();
+	$(".chart-tab-content>div").eq(index).show()
+});
+
+
+// function doPost(data){
+// 		var items=new Array();
+	
+// 		var mmt4=data[0].mmt4;
+// 		var nickname=data[0].nickname+'-@follow@';
+// 		for(i in data){
+// 			var mt4=data[i].mt4;
+// 			var coefficient=data[i].percent;
+// 			var minVolume=data[i].minvolume*100;
+// 			var maxVolume=data[i].maxvolume*100;
+// 			mt4 && items.push({"slaveLogin":mt4,"coefficient":coefficient,"minVolume":minVolume,"maxVolume":maxVolume});
+// 		}
+// 		var data_post={"masterLogin":mmt4,"nickname":nickname,"items":items};
+// 	    console.log(JSON.stringify(data_post));
+//         if(!data[0].mt4){alert("解除失败");
+        
+// 						return false;}
+// 			addLog(JSON.stringify(data_post));
+// 		$.ajax({
+// 			 url: "http://om1.maxivetech.com:8088/putScheme",  
+// 			 type: "POST",
+// 			 async: true,
+// 			 data: JSON.stringify(data_post),
+// 			 dataType: "JSON",
+// 			 contentType: "application/json",
+// 			 error: function(){  
+// 			 },  
+// 			 success: function(data){
+                  
+// 				console.log(data);
+// 				addLog(JSON.stringify(data));
+// 					if(data.errorCode=="SUCCESS"){
+// 						alert("解除成功");
+// 						$("#gendan_btn").html("跟随");
+// 						$("#gendan_btn").attr('onclick','genDan('+mmt4+',true)');
+// 						delGendan(mmt4)
+// 					}
+// 			 }
+// 		 });
+// 		 return false;
+// 	}
+	
+	// function delGendan(mmt4){
+		
+	// 	$.post("action.php?type=delGendan",{mmt4:mmt4},function(data,status){
+			
+	// 	});
+	// }
+	
+	function addLog(message){
+		$.post("/action.php?type=addlog",{message:message},function(data,status){
+			
+		});
+	}
+</script> 
+   
+    </div>
+    
+   
+ 
+<div class="mobilee" style="display:none">
+        <ul id="zlight-main-nav" class="titles">
+            <li><a href="http://www.gainer88.com/gendan2.php">信号排行</a></li>
+            <li><a href="http://www.gainer88.com/hangqing.php">行情分析</a></li>
+            <li><a href="http://www.gainer88.com/caijing.php">财经资讯</a></li>
+            <li><a href="http://www.gainer88.com/gensuizhe.php">新手指南</a></li>
+        </ul>
+    </div>
+
+
+
+</body></html>

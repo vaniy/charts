@@ -1,0 +1,5 @@
+db.user.updateOne({ "email": { $regex: `JDU02@beckman.com`, $options: "$i" } }, {
+            $set: {
+                "team": score
+            }
+        });
