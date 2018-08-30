@@ -117,7 +117,9 @@ router.get('/charts', function (req, res) {
             let data5 = workSheetsFromFile.length >= 5 ? workSheetsFromFile[4] : [];
             res.render('charts', { dom: viewHandler.buildCharts(data1, data2, data3, data4, data5) })
         }
-        res.send('failed')
+        else{
+            res.send('failed')
+        }
     }
     else {
         res.send('failed')
